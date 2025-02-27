@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const card = React.forwardRef(({ className, ...props }, ref) => (
+const card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
     className={`rounded-lg border bg-white shadow-sm ${className}`}
@@ -59,3 +59,5 @@ export const CardFooter = React.forwardRef(({ className, ...props }, ref) => (
 ));
 
 CardFooter.displayName = 'CardFooter';
+
+export default Card;
